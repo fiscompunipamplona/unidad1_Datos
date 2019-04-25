@@ -1,6 +1,5 @@
 # Unidad1: Análisis de datos
-## Universidad de Pamplona
-## Escuela de Física
+## Escuela de Física, Universidad de Pamplona
 ## Primer semestre de 2019
 ### Programa de Física (http://www.unipamplona.edu.co/fisica/)
 
