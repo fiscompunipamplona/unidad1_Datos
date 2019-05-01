@@ -1,19 +1,20 @@
-
 class momento:
     
-    y = []
+    m1 = 0.
+    N = 0
 
     def __init__(self):
-        print "hi"
+        self.m1 = 0.
+        self.N = 0
 
-    def prube(self, dafi):
-        for i in dafi:
-            xy = i.split()
-            self.y.append( xy[1] )
+    def momento1(self, dfile):
+        for i in dfile:
+            columns = i.split(" ")
+            if columns[0] != "#":
+                bin_i = float( columns[0] )
+                freq = float( columns[1] )
+                self.N += freq
+                self.m1 += bin_i * freq
 
-    def moment(self):
-        for i in range (len(self.y)):
-            print self.y[i]
-
-    def average(self):
-        print "hi00"
+        self.m1 /= self.N
+        return ( self.m1 )
