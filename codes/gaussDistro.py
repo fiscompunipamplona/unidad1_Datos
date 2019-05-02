@@ -30,3 +30,5 @@ outDistData.write( "# startBin %0.1f endBin %0.1f nbins %d\n" % (startBin, endBi
 for j in range( nbins ):
     outDistData.write('%0.2f %d\n' % (j*binwidth, hist[j]))
 outDistData.close()
+
+print("bye")
