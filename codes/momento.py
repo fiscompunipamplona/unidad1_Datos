@@ -18,3 +18,15 @@ class momento:
 
         self.m1 /= self.N
         return ( self.m1 )
+
+    def momento2(self, dfile):
+        for i in range( len(dfile[:,0]) ):
+            #bin_i = dfile[i,0]
+            #freq = dfile[i,1]
+            #self.N += freq
+            self.m1 += dfile[i,0] * dfile[i,1]
+
+        self.m1 /= sum( dfile[:,1] )
+        return( self.m1 )
+
+
