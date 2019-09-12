@@ -18,6 +18,12 @@ binwidth = (endBin - startBin) / nbins
 # Creating distribution 
 s = np.random.normal(mu, sg, nevents)
 
+tmp = []
+[tmp.append(np.random.normal(mu, sg, nevents)) for i in range(10)]
+
+
+[print(tmp[0][i]) for i in range(nevents)]
+
 
 # Filling histogram
 for i in s:
