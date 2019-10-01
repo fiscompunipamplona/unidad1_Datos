@@ -12,6 +12,7 @@ hist = [] # Array for histogram
 startBin = 0.
 endBin = 10.
 nbins = 100
+
 binwidth = (endBin - startBin) / nbins
 [hist.append(0) for i in range(nbins)] # Inizialiting histo
 
