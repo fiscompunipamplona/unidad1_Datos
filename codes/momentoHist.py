@@ -5,6 +5,7 @@ class momentoHist:
     N = 0
 
     def __init__(self):
+        print("hi fellas")
         self.m1 = 0.
         self.N = 0
 
