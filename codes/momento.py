@@ -7,7 +7,7 @@ class momento:
         self.m1 = 0.
         self.N = 0
 
-    def momento1(self, dfile):
+    def momento1(self, dfile): # Método usado para algo
         for i in dfile:
             columns = i.split(" ")
             if columns[0] != "#":
